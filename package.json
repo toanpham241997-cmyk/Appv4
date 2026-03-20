@@ -1,0 +1,13 @@
+{
+  "name": "vip-tool-pro-license-portal",
+  "version": "1.0.0",
+  "description": "License portal with Link4m free-key flow and 5-hour per-device trial keys.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

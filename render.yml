@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: vip-tool-pro-license-portal
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: APP_BASE_URL
+        sync: false
+      - key: LINK4M_API_TOKEN
+        sync: false
+      - key: FREE_KEY_TTL_HOURS
+        value: 5
+      - key: SESSION_TTL_MINUTES
+        value: 30
+      - key: SESSION_SECRET
+        generateValue: true
